@@ -1,0 +1,18 @@
+service: layer
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.11
+
+functions:
+  hello:
+    handler: handler.hello
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true

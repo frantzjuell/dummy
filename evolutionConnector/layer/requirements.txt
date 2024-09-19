@@ -1,0 +1,2 @@
+zeep==4.2.1
+wrapt-timeout-decorator==1.5.1
